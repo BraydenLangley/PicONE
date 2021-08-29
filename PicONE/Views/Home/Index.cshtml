@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Game Project!";
+}
+@{
+    Layout = "_Layout";
+}
+
+<div class="text-center">
+    <img width="46%" src="@Url.Content("~/images/PicONELogo.png")" alt="IMAGES" />
+
+    <h3 class="subtitle">A fun party game for everyone!</h3>
+    <div><button onclick="window.location.href = '/GameCreation/CreateGame';" value="" class="button">New Game</button></div>
+    <div><button onclick="window.location.href = '/GameCreation/JoinGame';" class="button">Join Game</button></div>
+
+    <div class="footer2">
+        <h2>By</h2>
+        <img width="225px" src="@Url.Content("~/images/TeamName.png")" alt="The SemiColons;" />
+    </div>
+
+</div>

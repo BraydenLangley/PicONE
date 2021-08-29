@@ -1,0 +1,27 @@
+﻿@model PicONE.Models.Player
+@{ 
+    Layout = "_Layout";
+}
+
+@{
+    ViewData["Title"] = "Create Game";
+}
+
+    <div class="text-center">
+        <img width="46%" src="@Url.Content("~/images/PicONELogo.png")" alt="IMAGES" />
+
+        <form action="/GameCreation/CreateGame" method="post">
+            <h4>Create a Username</h4>
+            <input class="text-box single-line" id="Username" name="Username" type="text" value="">
+            <p>
+                <button class="button" type="submit">Create Game</button>
+            </p>
+            @*<input name="__RequestVerificationToken" type="hidden" value="CfDJ8DUrm11GrAlOnSC_10Z7WKdbVr3nr7DJfOMI_afQ3-PcEDuP7aWc3Ir3wNjS568Q_9b-Zf7avHJ9Y4w8WCnB60vBKJrh9N2zw0fo2UF9ANaZi5dptvFYPVLLrDmYDyiKL5huKdbsuCVTkyWIURWuFlc">*@
+        </form>
+
+        <div class="footer2">
+            <h2>By</h2>
+            <img width="225px" src="@Url.Content("~/images/TeamName.png")" alt="The SemiColons;" />
+        </div>
+
+    </div>

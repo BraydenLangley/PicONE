@@ -1,0 +1,21 @@
+﻿@using PicONE.Models
+@model PicONE.Models.Player
+@{
+    Layout = "_Layout";
+}
+@{
+    var player = (Player)ViewData["AdminPlayer"];
+    player.ItemToDraw = "A sideways house";
+}
+
+<div class="text-center">
+    <img width="46%" src="@Url.Content("~/images/PicONELogo.png")" alt="IMAGES" />
+
+    <h1>Time to Draw</h1>
+
+    <h4>You're item to draw is a: @player.ItemToDraw</h4>
+
+</div>
+
+
+

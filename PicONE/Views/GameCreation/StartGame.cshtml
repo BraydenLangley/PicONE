@@ -1,0 +1,37 @@
+﻿@using PicONE.Models
+@model PicONE.Models.Player
+@{
+    ViewData["Title"] = "StartGame";
+}
+
+@{
+    var player = (Player)ViewData["AdminPlayer"];
+}   
+
+<h1>StartGame</h1>
+
+<div class="text-center">
+    <img width="46%" src="@Url.Content("~/images/PicONELogo.png")" alt="IMAGES" />
+
+    <fieldset>
+        <form action="/GamePlay/Draw" method="post">
+            <h4>Join Code</h4>
+            <h4>@player.GameId</h4>
+            <p>
+                Once all the players are in, start the game!
+            </p>
+            <h4>Number of players joined:</h4>
+            @*@Html.DisplayFor(x => x.Players.Length)*@
+            <h1>3</h1>
+            <p>
+                <button class="button" type="submit">Start Game</button>
+            </p>
+        </form>
+    </fieldset>
+
+    <div class="footer2">
+        <h2>By</h2>
+        <img width="225px" src="@Url.Content("~/images/TeamName.png")" alt="The SemiColons;" />
+    </div>
+
+</div>
