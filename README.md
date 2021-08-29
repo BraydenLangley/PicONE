@@ -1,2 +1,2 @@
 # PicONE
-SPE321 - Group Project Online Game Development
+Pictionary/JackBox like game that allows players to interact in person, while at the same time, still making use of technology.
