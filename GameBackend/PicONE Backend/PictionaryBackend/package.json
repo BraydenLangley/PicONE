@@ -1,0 +1,23 @@
+{
+  "name": "pictionary-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "description": "PictionaryBackend",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "async-lock": "^1.2.2",
+    "body-parser": "^1.15.0",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "node-cache": "^5.1.0"
+  },
+  "engines": {
+    "node": "~6.10.x"
+  }
+}
